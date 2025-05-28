@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,60 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.counter_container{
+  background-color: aqua;
+  width: 70%;
+  height: auto;
+text-align: center;
+margin: 60px auto;
+padding-bottom: 30px;
+border-radius: 10px;
+}
+
+.count-display{
+  width: 100%;
+  height: auto;
+  font-size: 300px;
+  color: rgb(241, 8, 8);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.counter-button{
+  width: 30%;
+  height: auto;
+  padding: 20px;
+  font-size: 26px;
+  background-color: rgb(247, 3, 3);
+  color: blanchedalmond;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.counter-button:hover{
+  font-size: 22px;
+  background-color: blanchedalmond;
+  color: rgb(250, 7, 7);
+}
+
+.limit-message{
+  font-size: 22px;
+  color: rgb(13, 13, 14);
+}
+
+@media screen and ( max-width:768px){
+  .counter-button{
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgb(247, 3, 3);
+  color: blanchedalmond;
+  font-weight: bold;
+  margin: 10px;
+}
 }
